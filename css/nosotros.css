@@ -1,0 +1,129 @@
+@import 'estilos.css';
+@import 'footer.css';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /*color de letra*/
+    color: #FFF;
+}
+h2{
+    font-weight: 600;
+}
+.informacion{
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    padding: 0.6em 3.5em;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 0.9em;
+    transition: all .25s;
+    font-weight: 600;
+}
+.informacion:hover{
+    background: #FFF;
+    color: #000;
+}
+h1{
+    font-weight: 600;
+    font-size: 3em;
+    font-family: 'Lora', serif;
+}
+
+/*EFECTO PARALLAX*/
+
+.banner {
+    width: 100%;
+    /*background: yellow;*/
+    height: 700px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    background: no-repeat;
+    /*background-image: url(../image/slider2.jpg);
+    background-attachment: fixed;
+    background-position: center;*/
+    /*indicamos ruta de la imagen*/
+    background: center fixed url(../image/ban.jpg);
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+}
+.banner__description{
+    width: 90%;
+    max-width: 1000px;
+    display: block;
+    margin: auto;
+}
+/*Efecto parallax 2*/
+.ban {
+    width: 100%;
+    /*background: yellow;*/
+    height: 500px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    /*background-image: url(../image/slider2.jpg);
+    background-attachment: fixed;
+    background-position: center;*/
+    background: center fixed url(../image/ban11.jpg);
+}
+.ban img{
+    width: 1500px;
+    height: 100%;
+}
+.ban__description{
+    width: 90%;
+    max-width: 1000px;
+    display: block;
+    margin: auto;
+}
+
+.izquierda{
+    /*background:blue;*/
+    /*con esta linea le asignamos el 100% segun el tamano de la pantalla*/
+    height: 300px;
+    /*hace que los elemntos ocupen el 50% de la pantalla*/
+    width: 50%;
+}
+.derecha{
+    /*background: url(../image/logo_JAE.png);*/
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 300px;
+}
+.svg img{
+    width: 400px;
+    height: 400px;
+}
+#division{
+    /*Usamos esta linea para que el contenido se coloque al lado de otro y no uno encima de otro*/
+    display: flex;
+    padding: 50px ;
+    /*background: #000;*/
+}
+.datos{
+    font-size: 35px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 40px;
+    color: #000;
+    font-family: 'Lora', serif;
+}
+p{
+    line-height: 25px;
+    width: 50%;
+    margin: auto;
+    color: #000;
+    font-size: 30px;
+    
+}
+.linea{
+    color: #000;
+}
+
